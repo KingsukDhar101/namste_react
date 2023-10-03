@@ -1,0 +1,41 @@
+<!-- * write hello world using html -->
+<!-- * write hello world using JS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <!-- <h1>Hello world</h1> -->
+  </div>
+
+  <script>
+    const heading = document.createElement('h1');
+    heading.innerHTML = 'Hello World - from JS';
+
+    const root = document.getElementById('root'); // finding root element
+    root.appendChild(heading);  // putting heading inside the root
+
+
+    // browser dont know REACT -> 
+    // use by (1) CDN or (2) 
+    // CDN : a place where libraries are hosted 
+    // crossorgin : Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources
+
+    // for REACT : 
+    // we have to include 2 CDN links : 
+    //  (1) react : main react file
+    //  (2) react-dom : acts as a bridge b/w react and browser (or DOM)
+    
+    </script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+
+
+    </body>
+</html>
